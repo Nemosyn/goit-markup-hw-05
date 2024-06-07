@@ -450,6 +450,7 @@ ul {
   background-color: transparent;
   padding: 8px 16px;
   margin-right: 24px;
+  outline: transparent;
 }
 .footer_input::placeholder {
   color: #ffffff;
@@ -483,8 +484,6 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  position: fixed;
-  top: 0;
   position: fixed;
   top: 0;
   opacity: 0;
