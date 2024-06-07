@@ -19,7 +19,8 @@
 </head>
 
 <body>
-    <!---------------------header-------------------->
+
+    <!--header-->
     <header class="header">
         <div class="container header_container">
             <nav class="nav">
@@ -47,17 +48,19 @@
     </header>
 
     <main>
-        <!---------------------section1--------------------->
+
+        <!--section1-->
         <section class="order_block">
             <div class="container order_block_container">
                 <h1 class="order_block_title">Effective Solutions for Your Business</h1>
                 <button type="button" class="order_block_button">Order Service</button>
             </div>
         </section>
-        <!---------------------section2--------------------->
+
+        <!--section2-->
         <section class="qualities_block">
             <div class="container qualities_block_container">
-                <h2 class="qualities_block_head">Qualities</h2>
+                <h2 class="visually-hidden">Qualities</h2>
                 <ul class="qualities_block_list">
                     <li class="qualities_block_group">
                         <div class="qualities_icons_container">
@@ -112,7 +115,8 @@
                 </ul>
             </div>
         </section>
-        <!---------------------section3--------------------->
+
+        <!--section3-->
         <section class="team_block">
             <div class="container team_block_container">
                 <h2 class="team_block_head">Our Team</h2>
@@ -271,7 +275,8 @@
                 </ul>
             </div>
         </section>
-        <!---------------------section4--------------------->
+
+        <!--section4-->
         <section class="portfolio_block">
             <div class="container portfolio_block_container">
                 <h2 class="portfolio_block_head">Our Portfolio</h2>
@@ -376,7 +381,8 @@
             </div>
         </section>
     </main>
-    <!---------------------footer--------------------->
+
+    <!--footer-->
     <footer class="footer">
         <div class="container footer_container">
             <div class="footer_first_box">
@@ -422,9 +428,8 @@
             <div class="footer_form_box">
                 <p class="form_text">Subscribe</p>
                 <form class="footer_form">
-                    <label for="footer_email" aria-label="email"></label>
-                    <input class="footer_input" type="email" name="user_email" id="footer_email"
-                        placeholder="E-mail"></input>
+                    <label for="footer_email"></label>
+                    <input class="footer_input" type="email" name="user_email" id="footer_email" placeholder="E-mail">
                     <button class="footer_form_btn" type="submit">
                         Subscribe
                         <svg class="footer-btn-icon" width="24" height="24">
@@ -435,8 +440,9 @@
             </div>
         </div>
     </footer>
-    <!---------------------modal--------------------->
-    <div class="backdrop">
+
+    <!--modal-->
+    <div class="backdrop is_open">
         <div class="modal">
             <button type="button" class="modal_close">
                 <svg class="close_button" width="8" height="8">
@@ -446,10 +452,10 @@
             <p class="modal_title">Leave your contacts and we will call you back</p>
             <form class="modal_form">
                 <div class="form_field">
-                    <label class="form_label" for="username">Name</label>
+                    <label class="form_label" for="user-name">Name</label>
                     <div class="form_label_wrap">
-                        <input class="form_input" type="text" name="name" id="username">
-                        <svg class="form_icons" width="18" height="18">
+                        <input class="form_input" type="text" name="user-name" id="user-name">
+                        <svg class="form_icons" width="18" height="24">
                             <use href="./images/icons.svg#icon-person-black"></use>
                         </svg>
                     </div>
@@ -458,7 +464,7 @@
                     <label class="form_label" for="phone">Phone</label>
                     <div class="form_label_wrap">
                         <input class="form_input" type="tel" name="phone" id="phone">
-                        <svg class="form_icons" width="18" height="18">
+                        <svg class="form_icons" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone-black"></use>
                         </svg>
                     </div>
@@ -467,20 +473,21 @@
                     <label class="form_label" for="email">Email</label>
                     <div class="form_label_wrap">
                         <input class="form_input" type="email" name="email" id="email">
-                        <svg class="form_icons" width="18" height="18">
+                        <svg class="form_icons" width="18" height="24">
                             <use href="./images/icons.svg#icon-email-black"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="form_field_text">
-                    <label class="form_label" for="comment">Comment</label>
-                    <textarea class="form_text_input" name="comment" id="comment" placeholder="Text input"></textarea>
+                    <label class="form_label" for="user-comment">Comment</label>
+                    <textarea class="form_text_input" name="user-comment" id="user-comment"
+                        placeholder="Text input"></textarea>
                 </div>
                 <div class="form_field_checkbox">
-                    <input class="form_checkbox_input qualities_block_head" type="checkbox" name="policy" value="true"
-                        id="privacy" visually-hidden>
-                    <label class="form_label_checkbox" for="privacy">
-                        <span>
+                    <input class="form_checkbox_input visually-hidden" type="checkbox" name="user-privacy" value="true"
+                        id="user-privacy">
+                    <label class="form_label_checkbox" for="user-privacy">
+                        <span class="form_label_span">
                             <svg class="check_icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
