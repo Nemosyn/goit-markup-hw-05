@@ -541,14 +541,13 @@ ul {
 .modal_close_icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal_close_btn:hover {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
-}
+.modal_close_btn:hover,
 .modal_close_btn:focus {
   background-color: #404bbf;
   border: none;
+}
+.modal_close_btn:hover > .modal_close_icon,
+.modal_close_btn:focus > .modal_close_icon {
   fill: #ffffff;
 }
 .modal_title {
@@ -628,12 +627,6 @@ ul {
 .form_field_checkbox {
   margin-bottom: 24px;
 }
-.form_label_checkbox {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
 .modal_form_btn {
   font-weight: 500;
   font-size: 16px;
@@ -658,10 +651,9 @@ ul {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
   align-items: center;
 }
-.form_label_checkbox .form_label_span {
+.form_label_span {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -675,7 +667,7 @@ ul {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form_checkbox_input:checked + .form_label_checkbox .form_label_span {
+.form_checkbox_input:checked + .form_label_checkbox > .form_label_span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
